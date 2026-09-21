@@ -12,7 +12,7 @@ habits will fight you in three specific places, listed below.
 ## Version baseline
 
 Verified against **Penpot 2.18** (September 2026). Two capabilities decide how a system is
-organised, and both are recent:
+organised — tokens and variants — and both arrived recently, in stages:
 
 | Capability | Since | Why it matters here |
 | --- | --- | --- |
