@@ -92,10 +92,7 @@ an explicit `version`, installed copies only move when that number changes — s
 content changes materially, for example a new Penpot baseline. `claude plugin tag` creates a
 matching git tag and checks that the two manifests agree.
 
-**While this repository is private**, an interactive install uses your existing git
-credentials, but background auto-updates do not use credential helpers by default. Run
-`gh auth setup-git` once, or use an SSH remote, so refreshes keep working. Making the
-repository public removes the caveat entirely.
+No authentication is needed — the repository is public.
 
 To try it without installing:
 
