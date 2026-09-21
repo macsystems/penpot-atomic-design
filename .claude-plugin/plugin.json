@@ -1,0 +1,10 @@
+{
+  "name": "penpot-atomic-design",
+  "description": "Structure a Penpot file as a real design system using Atomic Design: token sets and themes, page layout, naming, components, variants, shared libraries, documentation and handoff.",
+  "version": "1.0.0",
+  "author": { "name": "macsystems", "url": "https://github.com/macsystems" },
+  "homepage": "https://github.com/macsystems/penpot-atomic-design",
+  "repository": "https://github.com/macsystems/penpot-atomic-design",
+  "license": "Apache-2.0",
+  "keywords": ["penpot", "design-system", "atomic-design", "design-tokens", "components", "variants", "ui-ux", "mcp"]
+}

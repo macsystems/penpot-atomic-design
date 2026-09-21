@@ -52,6 +52,8 @@ version-specific.
 
 ## Installation
 
+### As a plain folder (any agent)
+
 A skill is a directory. Copy or symlink it into wherever your agent looks for skills.
 
 ```bash
@@ -65,6 +67,40 @@ cp -r skills/penpot-atomic-design <project>/<agent-skills-dir>/
 Agents disagree on where that directory lives (`~/.config/…/skills`, `.gemini/skills/`,
 `.agent/skills/`, a project-local `skills/`). The folder itself is tool-agnostic — symlink
 it wherever your setup expects skills, and a `git pull` keeps it current.
+
+### As a plugin
+
+This repository is also a plugin marketplace, so agents that support that format can install
+it and keep it up to date:
+
+```shell
+/plugin marketplace add macsystems/penpot-atomic-design
+/plugin install penpot-atomic-design@penpot-atomic-design
+```
+
+CLI equivalents:
+
+```bash
+claude plugin marketplace add macsystems/penpot-atomic-design
+claude plugin install penpot-atomic-design@penpot-atomic-design
+```
+
+`/plugin marketplace update penpot-atomic-design` refreshes the catalog; `/plugin update`
+then applies a new release. Because the plugin declares an explicit `version`, installed
+copies only move when that number changes — so **bump `version` in both
+`.claude-plugin/plugin.json` and the marketplace entry** whenever the content changes
+materially, for example a new Penpot baseline.
+
+**While this repository is private**, an interactive install uses your existing git
+credentials, but background auto-updates do not use credential helpers by default. Run
+`gh auth setup-git` once, or use an SSH remote, so refreshes keep working. Making the
+repository public removes the caveat entirely.
+
+To try it without installing:
+
+```bash
+claude --plugin-dir /path/to/penpot-atomic-design
+```
 
 ## Using it with the Penpot MCP server
 

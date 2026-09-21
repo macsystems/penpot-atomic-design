@@ -1,0 +1,25 @@
+{
+  "$schema": "https://code.claude.com/schemas/marketplace.json",
+  "name": "penpot-atomic-design",
+  "description": "Agent skills for organising design work in Penpot.",
+  "version": "1.0.0",
+  "owner": {
+    "name": "macsystems",
+    "url": "https://github.com/macsystems"
+  },
+  "plugins": [
+    {
+      "name": "penpot-atomic-design",
+      "displayName": "Penpot Atomic Design",
+      "source": "./",
+      "description": "Atomic Design in Penpot: build order, page plan, naming, token hierarchy, variants, shared libraries, annotations, MCP agent recipes and an audit checklist.",
+      "version": "1.0.0",
+      "author": { "name": "macsystems", "url": "https://github.com/macsystems" },
+      "homepage": "https://github.com/macsystems/penpot-atomic-design",
+      "repository": "https://github.com/macsystems/penpot-atomic-design",
+      "license": "Apache-2.0",
+      "category": "design",
+      "keywords": ["penpot", "design-system", "atomic-design", "design-tokens", "components", "variants", "ui-ux", "mcp"]
+    }
+  ]
+}
