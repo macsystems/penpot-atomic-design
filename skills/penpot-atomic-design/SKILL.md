@@ -16,10 +16,15 @@ organised, and both are recent:
 
 | Capability | Since | Why it matters here |
 | --- | --- | --- |
-| Native design tokens (W3C DTCG, sets + themes) | 2.3 | Tokens, not colour styles, are the foundation layer |
+| Design tokens: colour, spacing, sizing, radius, stroke, opacity, rotation | 2.6 | Tokens, not colour styles, are the foundation layer |
+| Type-related token types (font family, size, weight, letter spacing, case, decoration, number) | 2.10 | A type scale can live in tokens rather than in components |
 | Component variants (property axes, variant container) | 2.10 | The third segment of a component name is now a *property*, not a name |
+| Shadow tokens | 2.13 | Elevation joins the token layer |
+| Import tokens from a linked library | 2.16 | Token distribution stops being a manual file copy |
 
-Anything older than 2.10 needs the migration note in `references/06-variants.md`.
+Anything older than 2.10 needs the migration note in `references/06-variants.md`. On a
+self-hosted instance, check the version before promising a token type: the set was filled in
+over several releases.
 
 ## The three things Penpot does not do like Figma
 

@@ -52,6 +52,11 @@ library changes. So:
 If tokens must stay in lockstep across many files, the export/import JSON plus a repository
 is the more reliable path than manual re-imports.
 
+Two version notes: importing tokens *from a linked library* arrived in **2.16** — before
+that, distribution meant exporting and importing a file by hand. And genuine file sync for
+tokens is in development (**2.19**), which will turn this section's snapshot model into a
+linked one. Check the release notes before building a workflow around the copy semantics.
+
 ## Versioning
 
 Penpot keeps file versions, and a label on a version is the closest thing to a release tag.

@@ -26,6 +26,11 @@ library (consumers pull them in explicitly with *Import tokens*).
 `typography` is a composite: it bundles family, size, weight, line height, letter spacing
 and case into one token, which is what a type scale wants.
 
+The set was not delivered at once. Colour, opacity, radius, dimension, sizing, spacing,
+rotation and stroke width arrived with tokens themselves in **2.6**; the type-related types
+and `number` came in **2.10**; `shadow` in **2.13**. On a self-hosted instance that lags,
+check what exists before designing a token tree around a type that is not there yet.
+
 ## Sets
 
 A **set** is a named collection of tokens. Sets are the mechanism for alternates: light and

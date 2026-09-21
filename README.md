@@ -45,8 +45,8 @@ icons that ignore fill changes, and SVG imports that silently drop gradients.
 
 ## Version baseline
 
-Verified against **Penpot 2.18** (September 2026). Native design tokens require 2.3 or newer;
-component variants require 2.10 or newer. The variant chapter is the one that ages fastest —
+Verified against **Penpot 2.18** (September 2026). Design tokens require 2.6 or newer (the
+type-related token types landed in 2.10, shadows in 2.13); component variants require 2.10. The variant chapter is the one that ages fastest —
 check the [release notes](https://penpot.app/release-notes) before relying on anything
 version-specific.
 

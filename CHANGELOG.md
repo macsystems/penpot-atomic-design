@@ -9,5 +9,6 @@ Initial release.
 - Ten references covering file and page structure, naming, tokens, atoms and icons,
   molecules and organisms, variants, documentation and handoff, shared libraries, MCP agent
   recipes, and a pitfalls/audit checklist.
-- Verified against Penpot 2.18 (September 2026). Variants assume 2.10 or newer; native
-  design tokens assume 2.3 or newer.
+- Verified against Penpot 2.18 (September 2026). Variants assume 2.10 or newer; design
+  tokens assume 2.6 or newer, with the type-related token types from 2.10 and shadows
+  from 2.13.

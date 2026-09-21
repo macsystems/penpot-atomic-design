@@ -94,6 +94,9 @@ naive "find by name" comparison fail:
   rather than matching names during a cleanup — names are unreliable mid-operation.
 - **Hex values read back lowercase.** Written `#001F3F`, read `#001f3f`. Case-insensitive
   comparison or false alarms.
+- **A read-back path may carry spaces around its separators.** Written `preview/card`, read
+  `preview / card`. Normalise before comparing, or a de-duplication check will find nothing
+  and create a second copy.
 
 ## Anti-patterns
 
