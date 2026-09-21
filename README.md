@@ -85,11 +85,12 @@ claude plugin marketplace add macsystems/penpot-atomic-design
 claude plugin install penpot-atomic-design@penpot-atomic-design
 ```
 
-`/plugin marketplace update penpot-atomic-design` refreshes the catalog; `/plugin update`
-then applies a new release. Because the plugin declares an explicit `version`, installed
-copies only move when that number changes — so **bump `version` in both
-`.claude-plugin/plugin.json` and the marketplace entry** whenever the content changes
-materially, for example a new Penpot baseline.
+`/plugin marketplace update penpot-atomic-design` refreshes the catalog;
+`/plugin update penpot-atomic-design` then applies a new release. Because the plugin declares
+an explicit `version`, installed copies only move when that number changes — so **bump
+`version` in both `.claude-plugin/plugin.json` and the marketplace entry** whenever the
+content changes materially, for example a new Penpot baseline. `claude plugin tag` creates a
+matching git tag and checks that the two manifests agree.
 
 **While this repository is private**, an interactive install uses your existing git
 credentials, but background auto-updates do not use credential helpers by default. Run
